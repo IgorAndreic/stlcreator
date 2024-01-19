@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choice language</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1 data-localize="choose_lang"></h1>
+
+    <button onclick="changeLanguage('ru')">Русский</button>
+    <button onclick="changeLanguage('en')">English</button>
+
+    <script src="../js/locales.js"></script>
+    <script>
+        function changeLanguage(langCode) {
+            localStorage.setItem('selectedLanguage', langCode);
+            location.reload();
+        };
+        window.onload = function () {
+            loadLocalization();
+        };
+    </script>
+</body>
+</html>

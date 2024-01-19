@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STL Creator Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="annonce">
+        <h1 data-localize="welcome_message"></h1>
+    </div>
+    <div class="header">
+        <div class="header-table">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li><a href="about.html" data-localize="about">О нас</a></li>
+                    <li><a href="services.html" data-localize="services">Услуги</a></li>
+                    <li><a href="contact.html" data-localize="contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <button onclick="window.location.href= '/pages/locales.html'" data-localize="choose_lang">Выбор языка</button>
+        </div>
+    </div>
+
+    <div class="icon-container">
+        <!-- Иконка 1 -->
+        <a href="pages/form1.html" class="icon">Иконка 1</a>
+        <!-- Иконка 2 -->
+        <a href="#" class="icon">Иконка 2</a>
+        <!-- Иконка 3 -->
+        <a href="#" class="icon">Иконка 3</a>
+        <!-- Иконка 4 -->
+        <a href="#" class="icon">Иконка 4</a>
+        <!-- Иконка 5 -->
+        <a href="#" class="icon">Иконка 5</a>
+        <!-- Иконка 6 -->
+        <a href="#" class="icon">Иконка 6</a>
+        <!-- Иконка 7 -->
+        <a href="#" class="icon">Иконка 7</a>
+        <!-- Иконка 8 -->
+        <a href="#" class="icon">Иконка 8</a>
+        <!-- Иконка 9 -->
+        <a href="#" class="icon">Иконка 9</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 STL Creator Online. Все права защищены.</p>
+        <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+    </div>
+    <script src="js/locales.js"></script>
+    <script>
+        window.onload = function () {
+            loadLocalization();
+        };
+    </script>
+</body>
+</html>
+
